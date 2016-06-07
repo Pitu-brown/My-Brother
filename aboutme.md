@@ -1,15 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Personal Info
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Saw. I am interested in following fields:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Quantitative Structure Activity Relationship/Quantitative Structure Property Relationship
+- Proteocheometrics Modeling
+- Web Application
 
-What else do you need?
 
 ### my history
 
