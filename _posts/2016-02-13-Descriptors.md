@@ -18,9 +18,40 @@ smiles <- as.character(smiles)
 mols <- parse.smiles(smiles)[1:10]
 ~~~
 
+# Molecular Descriptors
+
 ### Topological Descriptors
 
 ~~~
 desc.names <- get.desc.names("topological")
-descriptors <- lapply(mols, eval.desc, desc.names)
+data <- lapply(mols, eval.desc, desc.names)
+descriptors <- data.frame(matrix(unlist(data), nrow = length(mols), byrow = T))
+colnames(descriptors) <- colnames(data[[1]])
+~~~
+
+### Geometrical Descriptors
+
+~~~
+desc.names <- get.desc.names("geometrical")
+data <- lapply(mols, eval.desc, desc.names)
+descriptors <- data.frame(matrix(unlist(data), nrow = length(mols), byrow = T))
+colnames(descriptors) <- colnames(data[[1]])
+~~~
+
+### Constitutional Descriptors
+
+~~~
+desc.names <- get.desc.names("constitutional")
+data <- lapply(mols, eval.desc, desc.names)
+descriptors <- data.frame(matrix(unlist(data), nrow = length(mols), byrow = T))
+colnames(descriptors) <- colnames(data[[1]])
+~~~
+
+### Electronic Descriptors
+
+~~~
+desc.names <- get.desc.names("electronic")
+data <- lapply(mols, eval.desc, desc.names)
+descriptors <- data.frame(matrix(unlist(data), nrow = length(mols), byrow = T))
+colnames(descriptors) <- colnames(data[[1]])
 ~~~
