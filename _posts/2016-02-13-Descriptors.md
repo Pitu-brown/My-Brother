@@ -4,4 +4,4 @@ title: Molecular Descriptors
 subtitle: Generating Molecular & Fingerprint Descriptors using R programming language
 ---
 
-Understanding 
+Understanding biological, chemical and physical properties of chemical compounds is central issue in pharmaceutical bioinformatics and to what accuracy we can predict these properties sorely depends on how a chemical compounds is described. Many molecular descriptors have been introduced with the aim of finding the information rich and most suited descriptors to relate these properties. In here, molecular and fingerprint descriptors will be calculated using the AChE data set. To get the data set, we will g
