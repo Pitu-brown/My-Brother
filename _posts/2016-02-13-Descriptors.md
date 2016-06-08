@@ -55,3 +55,26 @@ data <- lapply(mols, eval.desc, desc.names)
 descriptors <- data.frame(matrix(unlist(data), nrow = length(mols), byrow = T))
 colnames(descriptors) <- colnames(data[[1]])
 ~~~
+
+# Fingerprints
+
+Molecular fingerprint descriptors are distince for the chemical compounds that represent, like a human fingerprint that are distince for the person they belong to. They pinpoint posiiton in the fingerprint sequence to represnet some feature of the molecule. 
+
+###MACSS
+
+~~~
+fps <- lapply(mols, get.fingerprint, type='maccs')
+descriptors <- fp.to.matrix(fps)
+~~~
+
+### Signature Fingerprint
+~~~
+fps <- lapply(mols, get.fingerprint, type='signature')
+descriptors <- fp.to.matrix(fps)
+~~~
+
+### Circular Fingerprint
+~~~
+fps <- lapply(mols, get.fingerprint, type='signature')
+descriptors <- fp.to.matrix(fps)
+~~~
