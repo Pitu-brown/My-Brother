@@ -65,9 +65,9 @@ fps <- lapply(mols, get.fingerprint, type='maccs')
 descriptors <- fp.to.matrix(fps)
 ~~~
 
-### Signature Fingerprint
+### CDK Fingerprint
 ~~~
-fps <- lapply(mols, get.fingerprint, type='signature')
+fps <- lapply(mols, get.fingerprint, type='standard')
 descriptors <- fp.to.matrix(fps)
 ~~~
 
